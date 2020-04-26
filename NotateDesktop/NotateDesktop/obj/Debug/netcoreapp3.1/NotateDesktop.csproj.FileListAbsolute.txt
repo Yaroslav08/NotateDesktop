@@ -17,3 +17,6 @@ D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj
 D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\NotateDesktop.dll
 D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\NotateDesktop.pdb
 D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\NotateDesktop.genruntimeconfig.cache
+D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\bin\Debug\netcoreapp3.1\DevExpress.Mvvm.UI.dll
+D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\bin\Debug\netcoreapp3.1\DevExpress.Mvvm.dll
+D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\NotateDesktop.csproj.CopyComplete
