@@ -20,4 +20,13 @@
     <PackageReference Include="DevExpressMvvm" Version="19.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="DateExt">
+      <HintPath>..\..\..\..\DateExt\DateExt\DateExt\DateExt\bin\Release\netstandard2.0\DateExt.dll</HintPath>
+    </Reference>
+    <Reference Include="NotateAPI">
+      <HintPath>..\..\..\NotateAPI\NotateAPI\NotateAPI\bin\Debug\netcoreapp3.1\NotateAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
