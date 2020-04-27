@@ -7,11 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Page Remove="Themes\Blue.xaml" />
+    <Page Remove="Themes\Dark.xaml" />
+    <Page Remove="Themes\Green.xaml" />
+    <Page Remove="Themes\Light.xaml" />
+    <Page Remove="Themes\Orange.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Languages\" />
     <Folder Include="ViewModels\UserControls\" />
-    <Folder Include="Views\UserControls\" />
-    <Folder Include="Views\Windows\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +31,24 @@
     <Reference Include="NotateAPI">
       <HintPath>..\..\..\NotateAPI\NotateAPI\NotateAPI\bin\Debug\netcoreapp3.1\NotateAPI.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Themes\Blue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Resource Include="Themes\Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Resource Include="Themes\Green.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Resource Include="Themes\Light.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Resource Include="Themes\Orange.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
   </ItemGroup>
 
 </Project>

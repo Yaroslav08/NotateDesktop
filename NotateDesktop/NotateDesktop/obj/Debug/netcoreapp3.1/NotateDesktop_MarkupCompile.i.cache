@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\App.xaml
-6-1290576317
+5-1685526952
 
-5101372279
+912696311
 196-1687544298
-MainWindow.xaml;Themes\Blue.xaml;Themes\Dark.xaml;Themes\Green.xaml;Themes\Light.xaml;Themes\Orange.xaml;
+MainWindow.xaml;Views\UserControls\Confirm.xaml;Views\UserControls\Register.xaml;Views\Windows\HelpWindow.xaml;Views\Windows\WorkWindow.xaml;
 
 False
 

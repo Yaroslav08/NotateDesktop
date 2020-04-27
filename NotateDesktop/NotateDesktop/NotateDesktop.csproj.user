@@ -7,22 +7,48 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\UserControls\Confirm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\Register.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\HelpWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\WorkWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Blue.xaml">
+    <Resource Update="Themes\Blue.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Update="Themes\Dark.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Update="Themes\Green.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Update="Themes\Light.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Update="Themes\Orange.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Update="Views\UserControls\Confirm.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Dark.xaml">
+    <Page Update="Views\UserControls\Register.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Green.xaml">
+    <Page Update="Views\Windows\HelpWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Light.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Themes\Orange.xaml">
+    <Page Update="Views\Windows\WorkWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
