@@ -12,23 +12,33 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="NoResize">
-    <Window.Resources>
-        <ResourceDictionary Source="Themes/Dark.xaml"/>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Canvas Height="25" Grid.Row="0" Background="#242f3d" MouseLeftButtonDown="Canvas_MouseLeftButtonDown">
-            <Button Height="25" Width="40" Style="{DynamicResource CloseButtonStl}" Foreground="Green" BorderThickness="0" Canvas.Right="0" Command="{Binding Close}">
+            <Button Height="25" Width="40" Background="{x:Null}" BorderThickness="0" Canvas.Right="0" Command="{Binding Close}">
                 <Path Width="20" Height="20" Stretch="Uniform" Fill="White" Data="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
             </Button>
         </Canvas>
         <Grid x:Name="gridContent" Grid.Row="1">
-            <TextBox Style="{DynamicResource TextBoxStlOneLine}" Width="100" Height="30">
-                
-            </TextBox>
+            <TextBox 
+                Width="200" Height="30"
+                FontSize="14"
+                Grid.Column="1"
+                VerticalAlignment="Top" HorizontalAlignment="Center"
+                Margin="0,75,0,0"/>
+            <TextBox
+                Width="200" Height="30"
+                FontSize="14"
+                Grid.Column="1"
+                VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                Margin="0,0,0,90"/>
+            <Button Command="{Binding Login}"
+                    Width="100" Height="30"
+                    VerticalAlignment="Top" HorizontalAlignment="Center"
+                    Margin="200"/>
         </Grid>
     </Grid>
 </Window>
