@@ -15,7 +15,7 @@ namespace NotateDesktop.ViewModels.Windows
         private NotateClient client = NotateClient.Instance();
         private string login;
         private string password;
-        public MainWindowViewModel() { login = "yaroslav@gmail.com";password = "Yarik08"; }
+        public MainWindowViewModel() { }
 
         public string LogIn
         {
@@ -91,7 +91,13 @@ namespace NotateDesktop.ViewModels.Windows
             {
                 return new DelegateCommand(async() =>
                 {
-                    await client.AuthAsync(login, password);
+                    try
+                    {
+                        await client.AuthAsync(login, password);
+                        if (client.IsAuthorize) MessageBox.Show("Success", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+                        else MessageBox.Show("Fuck", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                    catch(Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error); }
                 });
             }
         }
