@@ -29,25 +29,34 @@
                 </Button.Content>
             </Button>
         </Canvas>
+        <Border>
+            
+        </Border>
         <Grid x:Name="gridContent" Grid.Row="1">
             <TextBox Style="{DynamicResource TextBoxStlOneLine}"
                      Width="200" Height="30"
                      FontSize="14"
                      Grid.Column="1"
                      VerticalAlignment="Top" HorizontalAlignment="Center"
-                     Margin="0,75,0,0"/>
+                     Margin="0,75,0,0"
+                     Text="{Binding LogIn, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBox Style="{DynamicResource TextBoxStlOneLine}"
                      Width="200" Height="30"
                      FontSize="14"
                      Grid.Column="1"
                      VerticalAlignment="Bottom" HorizontalAlignment="Center"
-                     Margin="0,0,0,90"/>
-            <Button Command="{Binding Login}"
+                     Margin="0,0,0,90"
+                     Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Command="{Binding Login, IsAsync=True}"
                     Width="75" Height="27"
                     VerticalAlignment="Bottom" HorizontalAlignment="Center"
                     Style="{DynamicResource ButtonStl}"
                     Margin="0,0,0,30"
-                    Content="Login"/>
+                    >
+                <Button.Content>
+                    <TextBlock Text="Login" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button.Content>
+            </Button>
         </Grid>
     </Grid>
 </Window>
