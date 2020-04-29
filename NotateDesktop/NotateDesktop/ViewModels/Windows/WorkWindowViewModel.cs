@@ -38,6 +38,26 @@ namespace NotateDesktop.ViewModels.Windows
             }
         }
 
+        public ICommand MaxStn
+        {
+            get
+            {
+                return new DelegateCommand(() =>
+                {
+                    if (Application.Current.MainWindow.WindowState == WindowState.Normal)
+                    {
+                        Application.Current.MainWindow.WindowState = WindowState.Maximized;
+                        return;
+                    }
+                    if(Application.Current.MainWindow.WindowState == WindowState.Maximized)
+                    {
+                        Application.Current.MainWindow.WindowState = WindowState.Normal;
+                        return;
+                    }
+                });
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName]string prop = "")
         {
