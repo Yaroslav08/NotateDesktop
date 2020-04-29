@@ -56,7 +56,7 @@
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1"/>
-                <ColumnDefinition Width="200" MinWidth="200" MaxWidth="350"/>
+                <ColumnDefinition Width="200" MinWidth="200" MaxWidth="500"/>
                 <ColumnDefinition Width="1"/>
                 <ColumnDefinition Width="*" MinWidth="250"/>
             </Grid.ColumnDefinitions>
@@ -124,7 +124,7 @@
                         VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"/>
                 <TextBox Style="{DynamicResource TextBoxSearchStl}" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="55 12 5 0"/>
             </Grid>
-            <GridSplitter Grid.Column="2" ShowsPreview="False" ResizeBehavior="PreviousAndNext" Width="3" VerticalAlignment="Stretch" Background="Transparent"/>
+            <GridSplitter Grid.Column="2" ShowsPreview="False" ResizeBehavior="PreviousAndNext" Width="1" VerticalAlignment="Stretch" Background="White"/>
             <Grid Grid.Column="3" x:Name="gridHelp2">
                 
             </Grid>
