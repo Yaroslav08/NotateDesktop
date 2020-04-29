@@ -15,6 +15,14 @@
     <Window.Resources>
         <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
     </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="btnMenuClose">
+            <BeginStoryboard x:Name="CloseMenu_BeginStoryboard" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="btnMenuOpen">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid Style="{DynamicResource GridStl}">
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -39,11 +47,19 @@
                 <ColumnDefinition Width="*" MinWidth="250"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="1" Panel.ZIndex="1" x:Name="gridHelp1">
-                <Grid x:Name="gridMenu"
+                <Grid x:Name="gridMenu" RenderTransformOrigin="0.5,0.5"
                       Background="{DynamicResource BackgroundMenu}" 
                       Width="250"
                       Margin="-250 0 0 0"
                       VerticalAlignment="Stretch" HorizontalAlignment="Left">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="130"/>
                         <RowDefinition Height="250"/>
@@ -67,7 +83,7 @@
                         <Button Style="{DynamicResource ButtonNotesStl}"
                                 VerticalAlignment="Bottom" HorizontalAlignment="Right"
                                 Margin="0 0 10 10"/>
-                        <Button Style="{DynamicResource ButtonBackStl}" x:Name="btnMenuClose" Click="btnMenuClose_Click"
+                        <Button Style="{DynamicResource ButtonBackStl}" x:Name="btnMenuClose"
                                 VerticalAlignment="Top" HorizontalAlignment="Right"
                                 Margin="0 10 10 0"/>
                     </Grid>
@@ -104,7 +120,7 @@
                 </Grid>
             </Grid>
             <Grid Grid.Column="1">
-                <Button Style="{DynamicResource ButtonMenuStl}" x:Name="btnMenuOpen" Click="btnMenuOpen_Click"
+                <Button Style="{DynamicResource ButtonMenuStl}" x:Name="btnMenuOpen"
                         VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"/>
             </Grid>
             <GridSplitter Grid.Column="2" ShowsPreview="False" ResizeBehavior="PreviousAndNext" Width="1" VerticalAlignment="Stretch" Background="Transparent"/>

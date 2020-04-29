@@ -2,6 +2,19 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:NotateDesktop.Themes">
 
+    <Storyboard x:Key="CloseMenu">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="gridMenu">
+            <EasingDoubleKeyFrame KeyTime="0" Value="250"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+    <Storyboard x:Key="OpenMenu">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="gridMenu">
+            <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="250"/>
+        </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+
     <SolidColorBrush x:Key="BackgroundMenu" Color="#242f3d"/>
     <SolidColorBrush x:Key="BackgroundImageColor" Color="#276999"/>
 
