@@ -120,9 +120,24 @@
                 </Grid>
             </Grid>
             <Grid Grid.Column="1">
-                <Button Style="{DynamicResource ButtonMenuStl}" x:Name="btnMenuOpen"
-                        VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"/>
-                <TextBox Style="{DynamicResource TextBoxSearchStl}" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="55 12 5 0"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Button Style="{DynamicResource ButtonMenuStl}" x:Name="btnMenuOpen" 
+                            VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBox Style="{DynamicResource TextBoxSearchStl}" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="55 12 5 0"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Background="{DynamicResource BackgroundTextCst}">
+                        <TextBlock FontSize="12" HorizontalAlignment="Left" Margin="10 0 0 0" Style="{DynamicResource TextBlockStl}"/>
+                    </Grid>
+                    <Grid Grid.Row="2" x:Name="gridResult">
+                        
+                    </Grid>
+                </Grid>                
             </Grid>
             <GridSplitter Grid.Column="2" ShowsPreview="False" ResizeBehavior="PreviousAndNext" Width="1" VerticalAlignment="Stretch" Background="White"/>
             <Grid Grid.Column="3" x:Name="gridHelp2">
