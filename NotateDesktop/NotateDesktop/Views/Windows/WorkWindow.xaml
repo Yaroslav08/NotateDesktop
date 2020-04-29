@@ -37,6 +37,20 @@
                         </Grid>
                     </Button.Content>
                 </Button>
+                <Button Height="20" Width="30" Canvas.Right="30" Style="{DynamicResource ButtonTransperentStl}" Command="{Binding MaxStn}">
+                    <Button.Content>
+                        <Grid Margin="2">
+                            <Path StrokeThickness="2" HorizontalAlignment="Center" Stretch="Uniform" Fill="White" Data="M18 18V20H4A2 2 0 0 1 2 18V8H4V18M22 6V14A2 2 0 0 1 20 16H8A2 2 0 0 1 6 14V6A2 2 0 0 1 8 4H20A2 2 0 0 1 22 6M20 6H8V14H20Z" />
+                        </Grid>
+                    </Button.Content>
+                </Button>
+                <Button Height="20" Width="30" Canvas.Right="60" Style="{DynamicResource ButtonTransperentStl}" Command="{Binding HideWindow}">
+                    <Button.Content>
+                        <Grid Margin="6 7 6 0">
+                            <Path StrokeThickness="2" HorizontalAlignment="Center" Stretch="Uniform" Fill="White" Data="M20,14H4V10H20" />
+                        </Grid>
+                    </Button.Content>
+                </Button>
             </Canvas>
         </Grid>
         <Grid Grid.Row="1">
@@ -62,7 +76,7 @@
                     </Grid.RenderTransform>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="130"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="220"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0" Background="{DynamicResource BackgroundImageColor}">
