@@ -72,8 +72,8 @@
     </Style>
 
     <Style x:Key="ButtonMenuStl" TargetType="Button">
-        <Setter Property="Width" Value="30"/>
-        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="35"/>
+        <Setter Property="Height" Value="35"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
@@ -88,7 +88,7 @@
                                 </Style.Triggers>
                             </Style>
                         </Border.Style>
-                        <Grid Background="Transparent" Margin="3">
+                        <Grid Background="Transparent" Margin="5">
                             <Path Fill="Gray" Stretch="None" Data="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
                         </Grid>
                     </Border>

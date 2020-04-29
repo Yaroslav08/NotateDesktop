@@ -23,5 +23,10 @@ namespace NotateDesktop.Views.Windows
             InitializeComponent();
             this.DataContext = new WorkWindowViewModel();
         }
+
+        private void Canvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }

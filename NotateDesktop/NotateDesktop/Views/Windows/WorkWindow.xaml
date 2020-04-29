@@ -21,7 +21,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <Canvas Style="{DynamicResource TopCanvas}">
+            <Canvas Style="{DynamicResource TopCanvas}" MouseLeftButtonDown="Canvas_MouseLeftButtonDown">
                 <Button Height="20" Width="30" Background="{x:Null}" Style="{DynamicResource CloseButtonStl}" Canvas.Right="0" Command="{Binding Close}">
                     <Button.Content>
                         <Grid Margin="2">
@@ -42,8 +42,7 @@
             </Grid>
             <Grid Grid.Column="1" Panel.ZIndex="0">
                 <Button Style="{DynamicResource ButtonMenuStl}"
-                        VerticalAlignment="Top" HorizontalAlignment="Left"
-                        Margin="5"/>
+                        VerticalAlignment="Top" HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Column="2" Panel.ZIndex="1">
 
