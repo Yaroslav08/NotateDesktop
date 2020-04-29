@@ -88,12 +88,12 @@
                                 <ImageBrush ImageSource="D:\Download\Photo.jpg"/>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <TextBlock Text="Alexander Keghenstkiyefwf"
+                        <TextBlock Text="Yaroslav Mudryk"
                                    Style="{DynamicResource TextBlockStl}"
                                    FontSize="16"
                                    VerticalAlignment="Top" HorizontalAlignment="Left"
                                    Margin="90 53 0 0"
-                                   TextTrimming="CharacterEllipsis" ToolTip="Alexander Keghenstkiyefwf"/>
+                                   TextTrimming="CharacterEllipsis" ToolTip="Yaroslav Mudryk"/>
                         <Button Style="{DynamicResource ButtonNotesStl}"
                                 VerticalAlignment="Bottom" HorizontalAlignment="Right"
                                 Margin="0 0 10 10"/>
