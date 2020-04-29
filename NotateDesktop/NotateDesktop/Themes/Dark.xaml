@@ -10,7 +10,15 @@
     </Storyboard>
     <Storyboard x:Key="OpenMenu">
         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="gridMenu">
-            <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="100"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.125" Value="125"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.15" Value="150"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.175" Value="175"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="200"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="225"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.275" Value="237"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.289" Value="245"/>
             <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="250"/>
         </DoubleAnimationUsingKeyFrames>
     </Storyboard>
@@ -158,7 +166,7 @@
                             </Style>
                         </Border.Style>
                         <Grid Background="Transparent" Margin="5">
-                            <Path Fill="White" Data="M3,6V22H21V24H3A2,2 0 0,1 1,22V6H3M16,9H21.5L16,3.5V9M7,2H17L23,8V18A2,2 0 0,1 21,20H7C5.89,20 5,19.1 5,18V4A2,2 0 0,1 7,2M7,4V18H21V11H14V4H7Z" />
+                            <Path Fill="White" Data="M19.31 18.9C19.75 18.21 20 17.38 20 16.5C20 14 18 12 15.5 12S11 14 11 16.5 13 21 15.5 21C16.37 21 17.19 20.75 17.88 20.32L21 23.39L22.39 22L19.31 18.9M15.5 19C14.12 19 13 17.88 13 16.5S14.12 14 15.5 14 18 15.12 18 16.5 16.88 19 15.5 19M5 20V12H2L12 3L22 12H20.18C19.33 11.11 18.23 10.47 17 10.18L12 5.69L7 10.19V18H9.18C9.35 18.72 9.64 19.39 10.03 20H5Z" />
                         </Grid>
                     </Border>
                 </ControlTemplate>
@@ -267,6 +275,86 @@
                                 Margin="60 0 0 0"
                                 FontSize="14"
                                 Text="Settings" 
+                                Style="{Binding TextBlockStl}"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="ButtonUsersStl" TargetType="Button">
+        <Setter Property="Background" Value="#242f3d"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="3">
+                        <Border.Style>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="Background" Value="#242f3d"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#394a60"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+                        <Grid Background="Transparent">
+                            <Path 
+                                VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                Margin="15 0 0 0" 
+                                Fill="White" 
+                                Data="M10,13C9.65,13.59 9.36,14.24 9.19,14.93C6.5,15.16 3.9,16.42 3.9,17V18.1H9.2C9.37,18.78 9.65,19.42 10,20H2V17C2,14.34 7.33,13 10,13M10,4A4,4 0 0,1 14,8C14,8.91 13.69,9.75 13.18,10.43C12.32,10.75 11.55,11.26 10.91,11.9L10,12A4,4 0 0,1 6,8A4,4 0 0,1 10,4M10,5.9A2.1,2.1 0 0,0 7.9,8A2.1,2.1 0 0,0 10,10.1A2.1,2.1 0 0,0 12.1,8A2.1,2.1 0 0,0 10,5.9M15.5,12C18,12 20,14 20,16.5C20,17.38 19.75,18.21 19.31,18.9L22.39,22L21,23.39L17.88,20.32C17.19,20.75 16.37,21 15.5,21C13,21 11,19 11,16.5C11,14 13,12 15.5,12M15.5,14A2.5,2.5 0 0,0 13,16.5A2.5,2.5 0 0,0 15.5,19A2.5,2.5 0 0,0 18,16.5A2.5,2.5 0 0,0 15.5,14Z" />
+                            <TextBlock 
+                                VerticalAlignment="Center" HorizontalAlignment="Left"
+                                Margin="60 0 0 0"
+                                FontSize="14"
+                                Text="Users" 
+                                Style="{Binding TextBlockStl}"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="ButtonFoundNoteStl" TargetType="Button">
+        <Setter Property="Background" Value="#242f3d"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="3">
+                        <Border.Style>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="Background" Value="#242f3d"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#394a60"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+                        <Grid Background="Transparent">
+                            <Path 
+                                VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                Margin="15 0 0 0" 
+                                Fill="White" 
+                                Data="M3,6V22H21V24H3A2,2 0 0,1 1,22V6H3M16,9H21.5L16,3.5V9M7,2H17L23,8V18A2,2 0 0,1 21,20H7C5.89,20 5,19.1 5,18V4A2,2 0 0,1 7,2M7,4V18H21V11H14V4H7Z" />
+                            <TextBlock 
+                                VerticalAlignment="Center" HorizontalAlignment="Left"
+                                Margin="60 0 0 0"
+                                FontSize="14"
+                                Text="Notes" 
                                 Style="{Binding TextBlockStl}"/>
                         </Grid>
                     </Border>

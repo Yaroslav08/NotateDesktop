@@ -24,6 +24,9 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\BaseTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Resource Update="Themes\Blue.xaml">
       <SubType>Designer</SubType>
     </Resource>

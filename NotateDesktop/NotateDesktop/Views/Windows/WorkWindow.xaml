@@ -52,18 +52,6 @@
                       Width="250"
                       Margin="-251 0 0 0"
                       VerticalAlignment="Stretch" HorizontalAlignment="Left">
-                    <!--<Grid.Style>
-                        <Style TargetType="Grid">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Margin, ElementName=btnMenuClose}" Value="0 0 0 0">
-                                    <Setter Property="Visibility" Value="Visible"/>
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding Margin, ElementName=btnMenuClose}" Value="-251 0 0 0">
-                                    <Setter Property="Visibility" Value="Hidden"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Grid.Style>-->
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -74,7 +62,7 @@
                     </Grid.RenderTransform>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="130"/>
-                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0" Background="{DynamicResource BackgroundImageColor}">
@@ -105,29 +93,11 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Button Grid.Row="0" Margin="1" Style="{DynamicResource ButtonCreateNoteStl}"/>
-                        <Button Grid.Row="1" Margin="1" Style="{DynamicResource ButtonStl}">
-                            <Button.Content>
-                                <TextBlock Text=""/>
-                            </Button.Content>
-                        </Button>
-                        <Button Grid.Row="2" Margin="1" Style="{DynamicResource ButtonStl}">
-                            <Button.Content>
-                                <TextBlock Text=""/>
-                            </Button.Content>
-                        </Button>
-                        <Button Grid.Row="3" Margin="1" Style="{DynamicResource ButtonStl}">
-                            <Button.Content>
-                                <TextBlock Text=""/>
-                            </Button.Content>
-                        </Button>
-                        <Button Grid.Row="4" Margin="1" Style="{DynamicResource ButtonSettingStl}">
-                            <Button.Content>
-                                <TextBlock Text=""/>
-                            </Button.Content>
-                        </Button>
+                        <Button Grid.Row="1" Margin="1" Style="{DynamicResource ButtonUsersStl}"/>
+                        <Button Grid.Row="2" Margin="1" Style="{DynamicResource ButtonFoundNoteStl}"/>
+                        <Button Grid.Row="3" Margin="1" Style="{DynamicResource ButtonSettingStl}"/>
                     </Grid>
                 </Grid>
             </Grid>
