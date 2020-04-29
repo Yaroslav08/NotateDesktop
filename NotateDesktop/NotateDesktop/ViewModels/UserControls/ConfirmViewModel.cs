@@ -12,6 +12,7 @@ namespace NotateDesktop.ViewModels.UserControls
     public class ConfirmViewModel
     {
         public ConfirmViewModel() { }
+        public ConfirmViewModel(string Login) { this.Login = Login; }
         private NotateClient client = NotateClient.Instance();
         private string login;
         private string code;
