@@ -32,7 +32,22 @@
             </Canvas>
         </Grid>
         <Grid Grid.Row="1">
-            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Panel.ZIndex="1">
+                
+            </Grid>
+            <Grid Grid.Column="1" Panel.ZIndex="0">
+                <Button Style="{DynamicResource ButtonMenuStl}"
+                        VerticalAlignment="Top" HorizontalAlignment="Left"
+                        Margin="5"/>
+            </Grid>
+            <Grid Grid.Column="2" Panel.ZIndex="1">
+
+            </Grid>
         </Grid>
     </Grid>
 </Window>
