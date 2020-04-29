@@ -5,19 +5,31 @@
     <Style x:Key="HelperWindowStl" TargetType="Window">
         
     </Style>
+    
+    
 
     <Style x:Key="GridStl" TargetType="Grid">
         <Setter Property="Background" Value="#0E1621"/>
     </Style>
     
+    
+    
     <Style x:Key="TopCanvas" TargetType="Canvas">
         <Setter Property="Background" Value="#242f3d"/>
     </Style>
     
+    
+    
     <Style x:Key="WorkWindowStl" TargetType="Window">
     </Style>
 
+
+
     <Style x:Key="UControlStl" TargetType="UserControl">
+    </Style>
+
+    <Style x:Key="GridMenu" TargetType="Grid">
+        <Setter Property="Background" Value="#242f3d"/>
     </Style>
 
     <Style x:Key="CloseButtonStl" TargetType="Button">
@@ -42,6 +54,8 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
 
     <Style x:Key="ButtonStl" TargetType="Button">
         <Setter Property="Background" Value="#242f3d"/>
@@ -70,9 +84,12 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
 
     <Style x:Key="ButtonMenuStl" TargetType="Button">
         <Setter Property="Width" Value="35"/>
+        <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Height" Value="35"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -96,6 +113,8 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
 
     <Style x:Key="PasswordBoxStl" TargetType="PasswordBox">
         <Setter Property="Foreground" Value="White"/>
@@ -111,10 +130,14 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
 
     <Style x:Key="TextBlockStl" TargetType="TextBlock">
         <Setter Property="FontFamily" Value="TimesNewRoman"/>
     </Style>
+    
+    
 
     <Style x:Key="TextBoxStlOneLine" TargetType="TextBox">
         <Setter Property="Foreground" Value="White"/>
@@ -130,6 +153,8 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
 
     <Style x:Key="ComboBoxStl" TargetType="ComboBox">
     </Style>

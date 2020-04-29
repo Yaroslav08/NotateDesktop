@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Canvas Style="{DynamicResource TopCanvas}" MouseLeftButtonDown="Canvas_MouseLeftButtonDown">
-                <Button Height="20" Width="30" Background="{x:Null}" Style="{DynamicResource CloseButtonStl}" Canvas.Right="0" Command="{Binding Close}">
+                <Button Height="20" Width="30" Style="{DynamicResource CloseButtonStl}" Canvas.Right="0" Command="{Binding CloseWindow}">
                     <Button.Content>
                         <Grid Margin="2">
                             <Path StrokeThickness="2" HorizontalAlignment="Center" Stretch="Uniform" Fill="White" Data="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
@@ -34,18 +34,26 @@
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" MinWidth="200"/>
+                <ColumnDefinition Width="1"/>
+                <ColumnDefinition Width="*" MinWidth="300"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0" Panel.ZIndex="1">
-                
+                <Grid x:Name="gridMenu"
+                      Style="{DynamicResource GridMenu}" 
+                      Width="250"
+                      Margin="-250 0 0 0"
+                      VerticalAlignment="Stretch" HorizontalAlignment="Left">
+                    
+                </Grid>
             </Grid>
             <Grid Grid.Column="1" Panel.ZIndex="0">
                 <Button Style="{DynamicResource ButtonMenuStl}"
                         VerticalAlignment="Top" HorizontalAlignment="Left"/>
             </Grid>
-            <Grid Grid.Column="2" Panel.ZIndex="1">
-
+            <GridSplitter Grid.Column="2" ShowsPreview="False" ResizeBehavior="PreviousAndNext" Width="1" VerticalAlignment="Stretch"/>
+            <Grid Grid.Column="3" Panel.ZIndex="0">
+                
             </Grid>
         </Grid>
     </Grid>
