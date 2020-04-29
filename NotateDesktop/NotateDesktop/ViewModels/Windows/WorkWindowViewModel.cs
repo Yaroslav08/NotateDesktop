@@ -27,6 +27,17 @@ namespace NotateDesktop.ViewModels.Windows
             }
         }
 
+        public ICommand Hide
+        {
+            get
+            {
+                return new DelegateCommand(() =>
+                {
+                    Application.Current.MainWindow.WindowState = WindowState.Minimized;
+                });
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName]string prop = "")
         {
