@@ -5,13 +5,13 @@
     <Storyboard x:Key="CloseMenu">
         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="gridMenu">
             <EasingDoubleKeyFrame KeyTime="0" Value="250"/>
-            <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
         </DoubleAnimationUsingKeyFrames>
     </Storyboard>
     <Storyboard x:Key="OpenMenu">
         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="gridMenu">
             <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-            <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="250"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="250"/>
         </DoubleAnimationUsingKeyFrames>
     </Storyboard>
 
