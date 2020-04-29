@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NotateDesktop.ViewModels.UserControls;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +22,7 @@ namespace NotateDesktop.Views.UserControls
         public Confirm()
         {
             InitializeComponent();
+            this.DataContext = new ConfirmViewModel();
         }
     }
 }
