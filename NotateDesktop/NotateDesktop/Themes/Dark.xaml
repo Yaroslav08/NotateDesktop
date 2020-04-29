@@ -406,8 +406,25 @@
             </Setter.Value>
         </Setter>
     </Style>
+
     
-    
+
+    <Style x:Key="TextBoxSearchStl" TargetType="TextBox">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="ForceCursor" Value="True"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border CornerRadius="3" Padding="2" BorderThickness="1" BorderBrush="#242F3D" Background="#242F3D">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
 
     <Style x:Key="ComboBoxStl" TargetType="ComboBox">
     </Style>

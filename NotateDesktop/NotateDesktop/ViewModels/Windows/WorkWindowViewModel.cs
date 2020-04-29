@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows;
@@ -12,7 +13,6 @@ namespace NotateDesktop.ViewModels.Windows
     public class WorkWindowViewModel
     {
         public WorkWindowViewModel() { }
-
 
 
 

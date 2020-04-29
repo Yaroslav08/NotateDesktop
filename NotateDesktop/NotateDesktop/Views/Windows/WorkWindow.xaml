@@ -42,7 +42,7 @@
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1"/>
-                <ColumnDefinition Width="*" MinWidth="200"/>
+                <ColumnDefinition Width="200" MinWidth="200" MaxWidth="350"/>
                 <ColumnDefinition Width="1"/>
                 <ColumnDefinition Width="*" MinWidth="250"/>
             </Grid.ColumnDefinitions>
@@ -99,13 +99,18 @@
                         <Button Grid.Row="2" Margin="1" Style="{DynamicResource ButtonFoundNoteStl}"/>
                         <Button Grid.Row="3" Margin="1" Style="{DynamicResource ButtonSettingStl}"/>
                     </Grid>
+                    <Grid Grid.Row="2">
+                        <TextBlock Text="Notate Desktop" Cursor="Hand" Style="{DynamicResource TextBlockStl}" FontWeight="Bold" FontStyle="Italic" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10 0 0 30"/>
+                        <TextBlock Text="Version 0.1" Cursor="Hand" Style="{DynamicResource TextBlockStl}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10 0 0 10"/>
+                    </Grid>
                 </Grid>
             </Grid>
             <Grid Grid.Column="1">
                 <Button Style="{DynamicResource ButtonMenuStl}" x:Name="btnMenuOpen"
                         VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"/>
+                <TextBox Style="{DynamicResource TextBoxSearchStl}" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="55 12 5 0"/>
             </Grid>
-            <GridSplitter Grid.Column="2" ShowsPreview="False" ResizeBehavior="PreviousAndNext" Width="1" VerticalAlignment="Stretch" Background="Transparent"/>
+            <GridSplitter Grid.Column="2" ShowsPreview="False" ResizeBehavior="PreviousAndNext" Width="3" VerticalAlignment="Stretch" Background="Transparent"/>
             <Grid Grid.Column="3" x:Name="gridHelp2">
                 
             </Grid>
