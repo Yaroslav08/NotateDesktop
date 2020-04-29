@@ -5,14 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NotateDesktop.Views.Windows"
         mc:Ignorable="d"
-        Title="WorkWindow"
+        Title="Notate-Desktop"
         Height="600" MinHeight="360"
         Width="800" MinWidth="380"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="CanResizeWithGrip">
-    <Grid>
+    <Window.Resources>
+        <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
+    </Window.Resources>
+    <Grid Style="{DynamicResource GridStl}">
         
     </Grid>
 </Window>
