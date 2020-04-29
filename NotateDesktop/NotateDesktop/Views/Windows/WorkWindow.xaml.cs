@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NotateDesktop.ViewModels.Windows;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +21,7 @@ namespace NotateDesktop.Views.Windows
         public WorkWindow()
         {
             InitializeComponent();
+            this.DataContext = new WorkWindowViewModel();
         }
     }
 }
