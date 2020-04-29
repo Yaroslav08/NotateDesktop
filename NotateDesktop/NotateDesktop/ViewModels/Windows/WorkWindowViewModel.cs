@@ -27,7 +27,7 @@ namespace NotateDesktop.ViewModels.Windows
             }
         }
 
-        public ICommand Hide
+        public ICommand HideWindow
         {
             get
             {
