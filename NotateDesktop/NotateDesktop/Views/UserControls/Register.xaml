@@ -4,9 +4,42 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NotateDesktop.Views.UserControls"
+             xmlns:theme="clr-namespace:NotateDesktop"
              mc:Ignorable="d" 
              d:DesignHeight="275" d:DesignWidth="600">
-    <Grid>
-            
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
+    </UserControl.Resources>
+    <Grid Style="{DynamicResource GridStl}">
+        <TextBox Style="{DynamicResource TextBoxStlOneLine}"
+                 Width="200" Height="30"
+                 VerticalAlignment="Top" HorizontalAlignment="Center"
+                 Margin="40"
+                 Text="{Binding Fullname, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Style="{DynamicResource TextBoxStlOneLine}"
+                 Width="200" Height="30"
+                 VerticalAlignment="Top" HorizontalAlignment="Center"
+                 Margin="100"
+                 Text="{Binding Login, UpdateSourceTrigger=PropertyChanged}"/>
+        <PasswordBox Style="{DynamicResource PasswordBoxStl}"
+                 Width="200" Height="30"
+                 VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                 Margin="80"
+                 PasswordChanged="PasswordBox_PasswordChanged"/>
+        <TextBlock Style="{DynamicResource TextBlockStl}"
+                   Width="200" Height="20"
+                   TextAlignment="Center"
+                   VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                   Margin="50"
+                   FontSize="12"/>
+        <Button Command="{Binding Register, IsAsync=True}"
+                Width="75" Height="27"
+                VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                Style="{DynamicResource ButtonStl}"
+                Margin="0,0,0,15">
+            <Button.Content>
+                <TextBlock Text="Register" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Button.Content>
+        </Button>
     </Grid>
 </UserControl>

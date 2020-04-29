@@ -51,8 +51,7 @@
                     Width="75" Height="27"
                     VerticalAlignment="Bottom" HorizontalAlignment="Center"
                     Style="{DynamicResource ButtonStl}"
-                    Margin="0,0,0,30"
-                    >
+                    Margin="0,0,0,30">
                 <Button.Content>
                     <TextBlock Text="Login" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button.Content>

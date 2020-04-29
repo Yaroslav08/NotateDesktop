@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NotateDesktop.ViewModels.UserControls;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +22,13 @@ namespace NotateDesktop.Views.UserControls
         public Register()
         {
             InitializeComponent();
+            this.DataContext = new RegisterViewModel();
+        }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext != null)
+            { ((dynamic)this.DataContext).Password = ((PasswordBox)sender).Password; }
         }
     }
 }
