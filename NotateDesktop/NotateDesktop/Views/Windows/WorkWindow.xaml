@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NotateDesktop.Views.Windows"
         mc:Ignorable="d"
-        Title="Notate-Desktop"
+        Title="Notate Desktop"
         Height="600" MinHeight="360"
         Width="800" MinWidth="380"
         AllowsTransparency="True"
@@ -20,14 +20,19 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Canvas Grid.Row="0" Style="{DynamicResource TopCanvas}">
-            <Button Height="20" Width="30" Background="{x:Null}" Style="{DynamicResource CloseButtonStl}" Canvas.Right="0" Command="{Binding Close}">
-                <Button.Content>
-                    <Grid Margin="2">
-                        <Path StrokeThickness="2" HorizontalAlignment="Center" Stretch="Uniform" Fill="White" Data="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                    </Grid>
-                </Button.Content>
-            </Button>
-        </Canvas>
+        <Grid Grid.Row="0">
+            <Canvas Style="{DynamicResource TopCanvas}">
+                <Button Height="20" Width="30" Background="{x:Null}" Style="{DynamicResource CloseButtonStl}" Canvas.Right="0" Command="{Binding Close}">
+                    <Button.Content>
+                        <Grid Margin="2">
+                            <Path StrokeThickness="2" HorizontalAlignment="Center" Stretch="Uniform" Fill="White" Data="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                        </Grid>
+                    </Button.Content>
+                </Button>
+            </Canvas>
+        </Grid>
+        <Grid Grid.Row="1">
+            
+        </Grid>
     </Grid>
 </Window>
