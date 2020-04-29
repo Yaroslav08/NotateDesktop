@@ -29,9 +29,6 @@
                 </Button.Content>
             </Button>
         </Canvas>
-        <Border>
-            
-        </Border>
         <Grid x:Name="gridContent" Grid.Row="1">
             <TextBox Style="{DynamicResource TextBoxStlOneLine}"
                      Width="200" Height="30"
