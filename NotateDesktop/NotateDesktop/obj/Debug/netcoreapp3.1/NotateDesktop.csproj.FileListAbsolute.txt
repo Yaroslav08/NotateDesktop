@@ -52,3 +52,6 @@ D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj
 D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\NotateDesktop.dll
 D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\NotateDesktop.pdb
 D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\NotateDesktop.genruntimeconfig.cache
+D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\NotateDesktop.csprojAssemblyReference.cache
+D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\Views\UserControls\Setting.g.cs
+D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\obj\Debug\netcoreapp3.1\Views\UserControls\Setting.baml

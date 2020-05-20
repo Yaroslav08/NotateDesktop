@@ -111,11 +111,11 @@
                         <Button Grid.Row="0" Margin="1" Style="{DynamicResource ButtonCreateNoteStl}"/>
                         <Button Grid.Row="1" Margin="1" Style="{DynamicResource ButtonUsersStl}"/>
                         <Button Grid.Row="2" Margin="1" Style="{DynamicResource ButtonFoundNoteStl}"/>
-                        <Button Grid.Row="3" Margin="1" Style="{DynamicResource ButtonSettingStl}"/>
+                        <Button Grid.Row="3" Margin="1" Style="{DynamicResource ButtonSettingStl}" Click="Button_Click"/>
                     </Grid>
                     <Grid Grid.Row="2">
                         <TextBlock Text="Notate Desktop" Cursor="Hand" Style="{DynamicResource TextBlockStl}" FontWeight="Bold" FontStyle="Italic" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10 0 0 30"/>
-                        <TextBlock Text="Version 0.1" Cursor="Hand" Style="{DynamicResource TextBlockStl}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10 0 0 10"/>
+                        <TextBlock Text="Version 0.0.1 Alpha" Cursor="Hand" Style="{DynamicResource TextBlockStl}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10 0 0 10"/>
                     </Grid>
                 </Grid>
             </Grid>
@@ -129,10 +129,10 @@
                     <Grid Grid.Row="0">
                         <Button Style="{DynamicResource ButtonMenuStl}" x:Name="btnMenuOpen" 
                             VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBox Style="{DynamicResource TextBoxSearchStl}" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="55 12 5 0"/>
+                        <TextBox Style="{DynamicResource TextBoxSearchStl}" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="55 12 10 0"/>
                     </Grid>
                     <Grid Grid.Row="1" Background="{DynamicResource BackgroundTextCst}">
-                        <TextBlock FontSize="12" HorizontalAlignment="Left" Margin="10 0 0 0" Style="{DynamicResource TextBlockStl}"/>
+                        <TextBlock FontSize="12" HorizontalAlignment="Left" Margin="10 0 0 0" Style="{DynamicResource TextBlockStl}" Text="Notes not found"/>
                     </Grid>
                     <Grid Grid.Row="2" x:Name="gridResult">
                         

@@ -33,5 +33,15 @@ namespace NotateDesktop.Views.Windows
         {
             this.DragMove();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Effect = new BlurEffect();
+            HelpWindow help = new HelpWindow();
+            help.content.Children.Add(new Setting());
+            var res = help.ShowDialog();
+            if (!Convert.ToBoolean(res))
+                this.Effect = null;
+        }
     }
 }
