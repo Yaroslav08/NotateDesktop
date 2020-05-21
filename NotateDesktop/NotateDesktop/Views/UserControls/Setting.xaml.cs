@@ -29,7 +29,6 @@ namespace NotateDesktop.Views.UserControls
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            hw.content.Children.Clear();
             hw.Close();
         }
     }

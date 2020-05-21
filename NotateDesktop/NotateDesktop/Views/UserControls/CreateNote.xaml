@@ -5,19 +5,21 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NotateDesktop.Views.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="600">
+             d:DesignHeight="300" d:DesignWidth="600"
+             BorderBrush="Gray"
+             BorderThickness="1">
     <UserControl.Resources>
         <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
     </UserControl.Resources>
     <Grid Style="{DynamicResource GridStl}">
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="35"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Background="{DynamicResource BackgroundMenu}">
+        <Grid Grid.Row="0">
             <TextBlock Text="Header:" Style="{DynamicResource TextBlockStl}" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="16" Margin="15 0 0 0"/>
             <Button Style="{DynamicResource CloseButtonStl}" VerticalAlignment="Center" HorizontalAlignment="Right" Height="30" Width="30">
                 <Button.Content>
@@ -25,11 +27,17 @@
                 </Button.Content>
             </Button>
         </Grid>
-        <Grid Grid.Row="2" Background="{DynamicResource BackgroundMenu}">
+        <Grid Grid.Row="1">
+            <TextBox Style="{DynamicResource TextBoxStlOneLine}"/>
+        </Grid>
+        <Grid Grid.Row="2">
             <TextBlock Text="Text:" Style="{DynamicResource TextBlockStl}" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="16" Margin="15 0 0 0"/>
         </Grid>
-        <Grid Grid.Row="5" Background="{DynamicResource BackgroundMenu}">
-            <Button Style="{DynamicResource ButtonStl}" Width="75" Height="25" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="15">
+        <Grid Grid.Row="3">
+            <TextBox Style="{DynamicResource TextBoxStlMultiLine}"/>
+        </Grid>
+        <Grid Grid.Row="5">
+            <Button Style="{DynamicResource ButtonStl}" Width="75" Height="25" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 15 0">
                 <Button.Content>
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Save"/>
                 </Button.Content>

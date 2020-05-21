@@ -15,7 +15,7 @@
     <Window.Resources>
         <ResourceDictionary Source="Themes/Dark.xaml"/>
     </Window.Resources>
-    <Grid Style="{DynamicResource GridStl}">
+    <Grid Style="{DynamicResource GridStl}" >
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>

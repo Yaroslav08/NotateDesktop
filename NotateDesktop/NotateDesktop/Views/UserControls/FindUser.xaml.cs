@@ -28,12 +28,8 @@ namespace NotateDesktop.Views.UserControls
 
         private List<UserView> userViews = new List<UserView>
         {
-            new UserView {Id=1, Name="Misha Brekhov", Source=new BitmapImage(new Uri(@"D:\Download\Photo_1.jpg")) },
-            new UserView {Id=2, Name="Yaroslav Mudryk", Source=new BitmapImage(new Uri(@"D:\Download\Photo.jpg"))},
-            new UserView {Id=1, Name="Misha Brekhov", Source=new BitmapImage(new Uri(@"D:\Download\Photo_1.jpg")) },
-            new UserView {Id=1, Name="Misha Brekhov", Source=new BitmapImage(new Uri(@"D:\Download\Photo_1.jpg")) },
-            new UserView {Id=1, Name="Misha Brekhov", Source=new BitmapImage(new Uri(@"D:\Download\Photo_1.jpg")) },
-            new UserView {Id=1, Name="Misha Brekhov", Source=new BitmapImage(new Uri(@"D:\Download\Photo_1.jpg")) },
+            new UserView { Id = 1, Name="Misha Brekhov", Source=new BitmapImage(new Uri(@"D:\Download\Photo_1.jpg")) },
+            new UserView {Id=2, Name="Yaroslav Mudryk", Source=new BitmapImage(new Uri(@"D:\Download\Photo.jpg"))}
         };
 
         private void tbSearch_KeyDown(object sender, KeyEventArgs e)

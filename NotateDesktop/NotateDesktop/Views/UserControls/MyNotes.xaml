@@ -6,8 +6,34 @@
              xmlns:local="clr-namespace:NotateDesktop.Views.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="480" MinHeight="480"
-             d:DesignWidth="200" MinWidth="200">
-    <Grid Background="ForestGreen">
-            
+             d:DesignWidth="190" MinWidth="190" MaxWidth="500">
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
+    </UserControl.Resources>
+    <Grid>
+        <ListView x:Name="lvmain" Background="Transparent" ScrollViewer.CanContentScroll="False" ScrollViewer.HorizontalScrollBarVisibility="Disabled" BorderThickness="0" BorderBrush="Transparent">
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="miOpenNewWindow" Header="View more"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Height="50" HorizontalAlignment="Stretch" Background="Blue">
+                        <TextBlock Text="{Binding Header}" Style="{DynamicResource TextBlockStl}"
+                                           VerticalAlignment="Top" HorizontalAlignment="Stretch"
+                                           FontSize="15" Margin="5 5 75 0"
+                                           TextTrimming="CharacterEllipsis"/>
+                        <TextBlock Text="{Binding Date}" Style="{DynamicResource TextBlockStl}"
+                                           VerticalAlignment="Top" HorizontalAlignment="Right"
+                                           FontSize="14" Margin="0 7 5 0"/>
+                        <TextBlock Text="{Binding Text}" Style="{DynamicResource TextBlockStl}"
+                                           VerticalAlignment="Top" HorizontalAlignment="Stretch"
+                                           FontSize="14" Margin="5 25 10 0"
+                                           TextTrimming="CharacterEllipsis"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>

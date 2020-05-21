@@ -26,6 +26,9 @@
                  VerticalAlignment="Bottom" HorizontalAlignment="Center"
                  Margin="80"
                  PasswordChanged="PasswordBox_PasswordChanged"/>
+        <TextBlock Text="Fullname:" Foreground="White" FontSize="16" Margin="0 40 410 0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <TextBlock Text="Login:" Foreground="White" FontSize="16" Margin="0 100 410 0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <TextBlock Text="Password:" Foreground="White" FontSize="16" Margin="0 170 410 0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
         <TextBlock Style="{DynamicResource TextBlockStl}"
                    Width="200" Height="20"
                    TextAlignment="Center"

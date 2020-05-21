@@ -1,4 +1,5 @@
 ﻿using NotateDesktop.ViewModels.Windows;
+using NotateDesktop.Views.UserControls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,8 @@ namespace NotateDesktop
         {
             InitializeComponent();
             this.DataContext = new MainWindowViewModel();
+            gridContent.Children.Clear();
+            gridContent.Children.Add(new Register());
         }
 
         private void Canvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
