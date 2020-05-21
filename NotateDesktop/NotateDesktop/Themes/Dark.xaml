@@ -679,6 +679,12 @@
 
 
 
+    <Style x:Key="ListViewStl" TargetType="ListView">
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+
+
     <Style x:Key="ComboBoxStl" TargetType="ComboBox">
     </Style>
 </ResourceDictionary>

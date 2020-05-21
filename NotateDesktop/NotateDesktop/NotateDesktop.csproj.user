@@ -22,6 +22,9 @@
     <Compile Update="Views\UserControls\Setting.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\UserControls\UsersResult.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Windows\HelpWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserControls\Setting.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\UsersResult.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Resource Update="Themes\Blue.xaml">

@@ -43,5 +43,15 @@ namespace NotateDesktop.Views.Windows
             if (!Convert.ToBoolean(res))
                 this.Effect = null;
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Effect = new BlurEffect();
+            HelpWindow help = new HelpWindow();
+            help.content.Children.Add(new FindUser());
+            var res = help.ShowDialog();
+            if (!Convert.ToBoolean(res))
+                this.Effect = null;
+        }
     }
 }

@@ -5,8 +5,36 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NotateDesktop.Views.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+             d:DesignHeight="270" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
+    </UserControl.Resources>
+    <Grid Style="{DynamicResource GridStl}">
+        <ListView x:Name="lvmain" Background="Transparent" ScrollViewer.CanContentScroll="False">
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="miOpenNewWindow" Header="View more"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border>
+                        <Grid Height="50">
+                            <Rectangle Margin="5 5 0 0"
+                                           RadiusX="200" RadiusY="200" 
+                                           Width="40" Height="40" 
+                                           VerticalAlignment="Top" HorizontalAlignment="Left">
+                                <Rectangle.Fill>
+                                    <ImageBrush ImageSource="{Binding Source}"/>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="{Binding Name}" Style="{DynamicResource TextBlockStl}"
+                                           VerticalAlignment="Top" HorizontalAlignment="Left"
+                                           Margin="60 17 0 0" FontSize="14"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>

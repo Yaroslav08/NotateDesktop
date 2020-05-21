@@ -109,7 +109,7 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Button Grid.Row="0" Margin="1" Style="{DynamicResource ButtonCreateNoteStl}"/>
-                        <Button Grid.Row="1" Margin="1" Style="{DynamicResource ButtonUsersStl}"/>
+                        <Button Grid.Row="1" Margin="1" Style="{DynamicResource ButtonUsersStl}" Click="Button_Click_1"/>
                         <Button Grid.Row="2" Margin="1" Style="{DynamicResource ButtonFoundNoteStl}"/>
                         <Button Grid.Row="3" Margin="1" Style="{DynamicResource ButtonSettingStl}" Click="Button_Click"/>
                     </Grid>
