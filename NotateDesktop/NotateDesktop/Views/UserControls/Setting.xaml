@@ -11,7 +11,7 @@
     <UserControl.Resources>
         <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
     </UserControl.Resources>
-    <Grid Style="{DynamicResource GridStl}" ShowGridLines="False">
+    <Grid Style="{DynamicResource GridStl}">
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="100"/>

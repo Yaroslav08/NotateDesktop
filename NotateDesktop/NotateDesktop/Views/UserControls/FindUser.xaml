@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="NotateDesktop.Views.UserControls.FindUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NotateDesktop.Views.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
+    </UserControl.Resources>
+    <Grid Style="{DynamicResource GridStl}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="Search users" FontSize="14" Foreground="White"
+                       VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15 0 0 0"/>
+            <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" BorderThickness="0"
+                    VerticalAlignment="Center" HorizontalAlignment="Right" Margin="7" Content="X" Foreground="White" FontSize="16">
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Path Fill="Gray"  Stretch="UniformToFill" Data="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" Margin="16,13,257,9"/>
+            <TextBox Style="{DynamicResource TextBoxSearchStl}" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="55 12 10 0"/>
+        </Grid>
+        <Grid Grid.Row="2" Background="{DynamicResource BackgroundTextCst}">
+            
+        </Grid>
+    </Grid>
+</UserControl>
