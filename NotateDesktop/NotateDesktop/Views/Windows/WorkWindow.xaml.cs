@@ -25,9 +25,9 @@ namespace NotateDesktop.Views.Windows
     {
         private List<NoteViewModel> noteViews = new List<NoteViewModel>
         {
-            new NoteViewModel { Date = "20.05.2020", Header = "My first note in this system", Text = "erthyujgerst5yujgfbdser4t5yu6kjghfdsew3r4t5yujfgdsdwe3r4" },
-            new NoteViewModel { Date = "21.05.2020", Header = "Second note in this system", Text = ":)" },
-            new NoteViewModel { Date = "21.05.2020", Header = "Second note in this system", Text = "rejifoerkopaeisugresithureosseiaojguiserohgosruighvnsemoveiosvmesgresuigevmsgreuhimui" }
+            new NoteViewModel { Date = "20.05.2020", Header = "First note", Text = "This note is a first note in this system now" },
+            new NoteViewModel { Date = "21.05.2020", Header = "Second note", Text = "This is note created for view in common access" },
+            new NoteViewModel { Date = "22.05.2020", Header = "Private note", Text = "I hate German Viktorovich and them faculty" }
         };
         public WorkWindow()
         {
@@ -46,6 +46,8 @@ namespace NotateDesktop.Views.Windows
         {
             this.Effect = new BlurEffect();
             HelpWindow help = new HelpWindow();
+            help.Height = 310;
+            help.Width = 300;
             help.content.Children.Add(new Setting());
             var res = help.ShowDialog();
             if (!Convert.ToBoolean(res))
@@ -74,11 +76,11 @@ namespace NotateDesktop.Views.Windows
 
         private void TextBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
-            {
-                gridResult.Children.Clear();
-                gridResult.Children.Add(new MyNotes(noteViews));
-            }
+            //if (e.Key == Key.Enter)
+            //{
+            //    gridResult.Children.Clear();
+            //    gridResult.Children.Add(new MyNotes(noteViews));
+            //}
         }
     }
 }

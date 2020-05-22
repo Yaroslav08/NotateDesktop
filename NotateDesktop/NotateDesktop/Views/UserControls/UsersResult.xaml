@@ -10,7 +10,7 @@
         <ResourceDictionary Source="pack://application:,,,/NotateDesktop;component/Themes/Dark.xaml"/>
     </UserControl.Resources>
     <Grid Style="{DynamicResource GridStl}">
-        <ListView x:Name="lvmain" Background="Transparent" ScrollViewer.CanContentScroll="False">
+        <ListView x:Name="lvmain" Background="Transparent" ScrollViewer.CanContentScroll="False" BorderThickness="0">
             <ListView.ContextMenu>
                 <ContextMenu>
                     <MenuItem x:Name="miOpenNewWindow" Header="View more"/>

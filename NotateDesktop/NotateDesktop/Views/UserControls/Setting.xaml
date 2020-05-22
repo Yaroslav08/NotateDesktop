@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NotateDesktop.Views.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="260" d:DesignWidth="300"
+             d:DesignHeight="310" d:DesignWidth="300"
              BorderBrush="Gray"
              BorderThickness="1">
     <UserControl.Resources>
@@ -19,6 +19,7 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <TextBlock Text="Setting" FontSize="14" Foreground="White"
@@ -50,6 +51,11 @@
         </Grid>
         <Grid Grid.Row="5">
             <Button Grid.Row="1" Margin="1" Style="{DynamicResource ButtonThemeStl}"/>
+        </Grid>
+        <Grid Grid.Row="6">
+            <TextBlock Text="Created by:" Style="{DynamicResource TextBlockStl}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+            <TextBlock Text="Mikhail Brekhov" Style="{DynamicResource TextBlockStl}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="7" TextDecorations="Underline" FontStyle="Italic"/>
+            <TextBlock Text="Yaroslav Mudryk" Style="{DynamicResource TextBlockStl}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="7" TextDecorations="Underline" FontStyle="Italic"/>
         </Grid>
     </Grid>
 </UserControl>

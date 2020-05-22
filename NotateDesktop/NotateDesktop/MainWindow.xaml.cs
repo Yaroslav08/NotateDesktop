@@ -26,8 +26,8 @@ namespace NotateDesktop
         {
             InitializeComponent();
             this.DataContext = new MainWindowViewModel();
-            gridContent.Children.Clear();
-            gridContent.Children.Add(new Register());
+            //gridContent.Children.Clear();
+            //gridContent.Children.Add(new Register());
         }
 
         private void Canvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
