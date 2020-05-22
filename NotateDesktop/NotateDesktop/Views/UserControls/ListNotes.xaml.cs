@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NotateDesktop.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,9 +19,10 @@ namespace NotateDesktop.Views.UserControls
     /// </summary>
     public partial class ListNotes : UserControl
     {
-        public ListNotes()
+        public ListNotes(List<NoteViewModel> notes)
         {
             InitializeComponent();
+            lvMain.ItemsSource = notes;
         }
     }
 }

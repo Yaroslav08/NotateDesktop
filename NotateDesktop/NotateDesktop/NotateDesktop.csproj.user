@@ -16,6 +16,9 @@
     <Compile Update="Views\UserControls\FindUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\UserControls\ListNotes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\MyNotes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserControls\FindUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\ListNotes.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserControls\MyNotes.xaml">

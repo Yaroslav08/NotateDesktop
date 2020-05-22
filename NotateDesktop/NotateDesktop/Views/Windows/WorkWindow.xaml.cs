@@ -76,11 +76,11 @@ namespace NotateDesktop.Views.Windows
 
         private void TextBox_KeyDown(object sender, KeyEventArgs e)
         {
-            //if (e.Key == Key.Enter)
-            //{
-            //    gridResult.Children.Clear();
-            //    gridResult.Children.Add(new MyNotes(noteViews));
-            //}
+            if (e.Key == Key.Enter)
+            {
+                gridHelp2.Children.Clear();
+                gridHelp2.Children.Add(new ListNotes(noteViews));
+            }
         }
     }
 }
