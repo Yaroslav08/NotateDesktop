@@ -25,9 +25,9 @@ namespace NotateDesktop.Views.Windows
     {
         private List<NoteViewModel> noteViews = new List<NoteViewModel>
         {
-            new NoteViewModel {Date="20.05.2020", Header="My first note in this system", Text="erthyujgerst5yujgfbdser4t5yu6kjghfdsew3r4t5yujfgdsdwe3r4" },
-            new NoteViewModel {Date="21.05.2020", Header="Second note in this system", Text=":)"},
-            new NoteViewModel {Date="21.05.2020", Header="Second note in this system", Text="rejifoerkopaeisugresithureosseiaojguiserohgosruighvnsemoveiosvmesgresuigevmsgreuhimui"}
+            new NoteViewModel { Date = "20.05.2020", Header = "My first note in this system", Text = "erthyujgerst5yujgfbdser4t5yu6kjghfdsew3r4t5yujfgdsdwe3r4" },
+            new NoteViewModel { Date = "21.05.2020", Header = "Second note in this system", Text = ":)" },
+            new NoteViewModel { Date = "21.05.2020", Header = "Second note in this system", Text = "rejifoerkopaeisugresithureosseiaojguiserohgosruighvnsemoveiosvmesgresuigevmsgreuhimui" }
         };
         public WorkWindow()
         {

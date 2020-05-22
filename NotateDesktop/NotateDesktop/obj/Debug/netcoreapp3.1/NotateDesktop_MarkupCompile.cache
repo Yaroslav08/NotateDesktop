@@ -1,5 +1,5 @@
 ﻿NotateDesktop
-1.0.0.0
+
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 D:\Programming\Real Project\Notate\NotateDesktop\NotateDesktop\NotateDesktop\App.xaml
 11880158546
 
-21-1925411347
+19-287014035
 1971337757998
 MainWindow.xaml;Themes\BaseTheme.xaml;Views\UserControls\Confirm.xaml;Views\UserControls\CreateNote.xaml;Views\UserControls\FindUser.xaml;Views\UserControls\MyNotes.xaml;Views\UserControls\Register.xaml;Views\UserControls\Setting.xaml;Views\UserControls\UsersResult.xaml;Views\Windows\HelpWindow.xaml;Views\Windows\WorkWindow.xaml;
 
